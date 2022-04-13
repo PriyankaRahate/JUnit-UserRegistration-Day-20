@@ -37,14 +37,14 @@ public class UserRegistrationTest {
 
     @Test
     public void givenPasswordMinimum1NumericUpperCaseLowerCaseAndExact1SpecialCharacterValueAndMinimum8Characters(){
-        boolean password = test.validatePassword("Priyanka24@Rahate97");
+        boolean password = test.validatePassword("Priyanka24@R97");
         Assert.assertEquals(true,password);
     }
 
     @Test
     public void givenSadMood_ShouldReturnSad(){
 
-    	actual =test.analyzeMood("I am In SAD mood"); // ="sad"
+         actual =test.analyzeMood("I am In SAD mood"); // ="sad"
          expected ="sad";
         Assert.assertEquals(expected,actual);
     }
